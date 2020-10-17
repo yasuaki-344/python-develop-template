@@ -11,11 +11,7 @@ from writer import Test
 
 
 class ApplicationContainer(containers.DeclarativeContainer):
-    """Inversion of control container of application.
-
-    Args:
-        containers ([type]): [description]
-    """
+    """Inversion of control container of application."""
 
     application = providers.Factory(
         Test,
