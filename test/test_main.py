@@ -6,5 +6,7 @@
 
 import unittest
 
+from test_sample import TestSample
+
 if __name__ == "__main__":
     unittest.main()
