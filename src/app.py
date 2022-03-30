@@ -1,14 +1,16 @@
 """Application entry point"""
 
-from container import Service, Container
 from dependency_injector.wiring import Provide, inject
+
+from container import Container
+from use_cases.github_user_interactor import GitHubUserInteractor
 
 
 @inject
-def main(service: Service = Provide[Container.service]):
+def main(service: GitHubUserInteractor = Provide[Container.service]):
     """Sets up dependency injection and run application.
     """
-    service.sample()
+    service.get_user_information()
 
 
 if __name__ == "__main__":
