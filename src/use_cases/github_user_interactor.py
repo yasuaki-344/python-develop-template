@@ -1,12 +1,13 @@
 """example usecase class implementation"""
-import requests
+from repositories.giithub_user_repository import GitHubUserRepository
+
 
 class GitHubUserInteractor:
     """This is just example"""
 
-    def __init__(self):
-        pass
+    def __init__(self, repository: GitHubUserRepository):
+        self.__repository = repository
 
     def get_user_information(self):
-        r = requests.get("https://api.github.com/users/defunkt")
-        print(r.json())
+        res = self.__repository.get_user_info("defunkt")
+        print(res)
