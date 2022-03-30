@@ -1,19 +1,23 @@
 """Declaration of DI containers."""
-# Copyright (c) 2020 Yasuaki Miyoshi.
-#
-# This software is released under the MIT License.
-# see http://opensource.org/licenses/mit-license.php
-
 import dependency_injector.containers as containers
 import dependency_injector.providers as providers
 
 from writer import Test
 
+class Service:
+    def __init__(self) -> None:
+        self.__target = "hello world"
 
-class ApplicationContainer(containers.DeclarativeContainer):
+    def sample(self):
+        print(self.__target)
+
+
+class Container(containers.DeclarativeContainer):
     """Inversion of control container of application."""
 
     application = providers.Factory(
         Test,
         message="hello world"
     )
+
+    service = providers.Factory(Service)
