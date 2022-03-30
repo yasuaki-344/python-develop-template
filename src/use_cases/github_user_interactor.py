@@ -10,7 +10,7 @@ class GitHubUserInteractor:
         self.__repository = repository
         self.__business_logic = business_logic
 
-    def get_user_information(self):
+    def get_user_information(self) -> None:
         res = self.__repository.get_user_info("defunkt")
         info = self.__business_logic.extract_user_info(res)
         print(info)
