@@ -1,4 +1,5 @@
 """example usecase class implementation"""
+import requests
 
 class GitHubUserInteractor:
     """This is just example"""
@@ -7,4 +8,5 @@ class GitHubUserInteractor:
         pass
 
     def get_user_information(self):
-        print("hello world")
+        r = requests.get("https://api.github.com/users/defunkt")
+        print(r.json())
