@@ -1,2 +1,2 @@
-dataclasses-json == 0.5.2
-dependency-injector == 4.0.3
+dataclasses-json == 0.5.7
+dependency-injector == 4.39.1
