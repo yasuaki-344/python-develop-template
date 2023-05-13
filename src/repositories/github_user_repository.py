@@ -1,5 +1,5 @@
 """Repository class example."""
-from typing import Any, Dict
+from typing import Any
 
 import requests
 
@@ -7,11 +7,11 @@ import requests
 class GitHubUserRepository:
     """Repository example."""
 
-    def __init__(self):
+    def __init__(self) -> None:
         """Initialize a new instance of GitHubUserRepository."""
         self.__rest_api_url = "https://api.github.com"
 
-    def get_user_info(self, user: str) -> Dict[str, Any]:
+    def get_user_info(self, user: str) -> Any:
         """Get user information by using GitHub REST API.
 
         Args:

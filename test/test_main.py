@@ -6,7 +6,7 @@
 
 import unittest
 
-from test_sample import TestSample
+from test_sample import TestSample  # noqa
 
 if __name__ == "__main__":
     unittest.main()

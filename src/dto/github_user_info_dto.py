@@ -1,5 +1,6 @@
 """Data transfer object example."""
 import dataclasses
+
 import dataclasses_json
 
 
