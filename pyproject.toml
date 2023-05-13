@@ -41,3 +41,5 @@ warn_return_any = true
 warn_unused_ignores = true
 warn_redundant_casts = true
 
+[tool.black]
+line-length = 100
