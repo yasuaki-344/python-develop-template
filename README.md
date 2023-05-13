@@ -4,7 +4,7 @@
 
 ### Setup Python
 
-If `pyenv` is not installed, `pyenv` as follows:
+If `pyenv` is not installed, you can install `pyenv` as follows:
 
 ```bash
 curl https://pyenv.run | bash
@@ -21,8 +21,17 @@ pyenv install [python-version]
 pyenv local [python-version]
 ```
 
-### Install `Poetry`
+### Install dependency packages
 
-```shell
-pip install -r requirements.txt
+If `poetry` is not installed, you can install as follows:
+
+```bash
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
+Install dependency packages as follows:
+
+```bash
+poetry shell
+poetry install
 ```
