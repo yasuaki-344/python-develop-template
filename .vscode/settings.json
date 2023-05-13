@@ -6,11 +6,20 @@
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Args": [
-      "--ignore=E203, W503",
-      "--max-complexity=10",
+    "max-line-length = 100",
+    "--ignore=E203, W503",
+    "--max-complexity=10"
   ],
   "python.linting.flake8Path": "${workspaceFolder}/.venv/bin/flake8",
   "python.linting.mypyEnabled": true,
   "python.linting.mypyPath": "${workspaceFolder}/.venv/bin/mypy",
   "autoDocstring.docstringFormat": "numpy",
+  "cSpell.ignorePaths": [
+    "package-lock.json",
+    "node_modules",
+    "vscode-extension",
+    ".git/objects",
+    ".vscode",
+    ".vscode-insiders"
+  ]
 }
