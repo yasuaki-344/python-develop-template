@@ -15,6 +15,5 @@ class Container(containers.DeclarativeContainer):
     business_logic = providers.Factory(GitHubUserInfoExtractor)
 
     service = providers.Factory(
-        GitHubUserInteractor,
-        repository=repository,
-        business_logic=business_logic)
+        GitHubUserInteractor, repository=repository, business_logic=business_logic
+    )

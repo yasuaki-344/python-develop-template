@@ -6,9 +6,7 @@ from repositories.giithub_user_repository import GitHubUserRepository
 class GitHubUserInteractor:
     """This is just example."""
 
-    def __init__(self,
-                 repository: GitHubUserRepository,
-                 business_logic: GitHubUserInfoExtractor):
+    def __init__(self, repository: GitHubUserRepository, business_logic: GitHubUserInfoExtractor):
         """Initialize a new instance of GitHubUserInteractor.
 
         Args:
