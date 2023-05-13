@@ -10,14 +10,14 @@ import unittest
 class TestSample(unittest.TestCase):
     """Provide unit test."""
 
-    def setUp(self):
+    def setUp(self) -> None:
         """Prepare the test fixture."""
         print("set up process")
 
-    def tearDown(self):
+    def tearDown(self) -> None:
         """Tidy up after the test method has been run."""
         print("tear down process")
 
-    def test_execute(self):
+    def test_execute(self) -> None:
         """Example."""
         print("execute process")

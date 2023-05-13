@@ -7,7 +7,7 @@ from use_cases.github_user_interactor import GitHubUserInteractor
 
 
 @inject
-def main(service: GitHubUserInteractor = Provide[Container.service]):
+def main(service: GitHubUserInteractor = Provide[Container.service]) -> None:
     """Sets up dependency injection and run application."""
     service.get_user_information()
 

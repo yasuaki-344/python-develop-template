@@ -1,6 +1,6 @@
-"""example usecase class implementation."""
+"""example use case class implementation."""
 from business_logics.github_user_info_extractor import GitHubUserInfoExtractor
-from repositories.giithub_user_repository import GitHubUserRepository
+from repositories.github_user_repository import GitHubUserRepository
 
 
 class GitHubUserInteractor:

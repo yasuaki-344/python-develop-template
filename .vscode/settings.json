@@ -21,5 +21,8 @@
     ".git/objects",
     ".vscode",
     ".vscode-insiders"
+  ],
+  "cSpell.words": [
+    "Interactor"
   ]
 }

@@ -11,7 +11,7 @@ class GitHubUserInfoExtractor:
         """Initialize a new instance of GitHubUserInfoExtractor class."""
         pass
 
-    def extract_user_info(self, json: Dict[str, Any]) -> GitHubUserInfoDto:
+    def extract_user_info(self, json: Dict[str, Any]) -> Any:
         """Convert json data to GitHubUserInfoDto.
 
         Args:
@@ -20,5 +20,5 @@ class GitHubUserInfoExtractor:
         Returns:
             GitHubUserInfoDto: _description_
         """
-        dto = GitHubUserInfoDto.from_dict(json)
+        dto = GitHubUserInfoDto.from_dict(json)  # type: ignore
         return dto
